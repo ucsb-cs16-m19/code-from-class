@@ -1,0 +1,360 @@
+Last login: Tue Jun 25 10:45:01 on ttys002
+lawtonnichols:~/ $ pwd                                               [11:28:19]
+/Users/lawtonnichols
+lawtonnichols:~/ $ ls                                                [11:28:57]
+6.22.19 14.40.pklg   Library              dwhelper
+6.22.19 14.45.pklg   Movies               iMacros
+Applications         Music                lib
+Creative Cloud Files Pictures             project
+Desktop              PopcornTime          racket-prefs.rktd
+Documents            Public               roms
+Downloads            VirtualBox VMs       teyjus
+Dropbox              bin                  txl10.6d.macosx64
+lawtonnichols:~/ $ cd Desktop                                        [11:29:19]
+lawtonnichols:Desktop/ $ pwd                                         [11:30:38]
+/Users/lawtonnichols/Desktop
+lawtonnichols:Desktop/ $ ls                                          [11:30:44]
+01 - Don't Sing (feat. Benny Sings).mp3
+03 - Grand Champion.mp3
+Art
+Books
+Captura de Pantalla 2019-06-16 a la(s) 00.27.11.png
+Captura de Pantalla 2019-06-23 a la(s) 12.51.01.png
+Cotillion
+Donald_J._Mastronarde_Introduction_to_Attic_Greek.pdf
+Garth Brooks - The Ultimate Hits
+Kyle-Reading-List
+Papers
+TAJS
+Windows 3.1
+[1998] In The Aeroplane Over The Sea
+a.out
+asdf.cpp
+asdf.java
+asdf.py
+asdf.scala
+asdf.txt
+asdf.v
+asdf2.py
+cs16
+cs24
+cs8
+drawPolygon.html
+eta.ai
+fett
+film pics
+fix-moss.py
+fixpoint-reuse-artifact
+fixpoint-reuse-artifact.zip
+fixpoint-reuse-implementation
+fixpoint-reuse-implementation.zip
+model-counting-similarity
+notjs
+old 162 slides
+pdg-stuff
+plagiarism-detection-paper
+plrg
+proposal
+safe
+scala-am
+semantic-clone-detection-paper
+students.txt
+type-graphs.tar.gz
+while-incremental
+worklist-reuse-paper
+worklist-reuse-paper.zip
+worklist-reuse-tests
+xlcd
+lawtonnichols:Desktop/ $ cd cs16/Summer-2019/code-from-class/06-25   [11:30:46]
+lawtonnichols:06-25/ $ ls                                            [11:31:21]
+hello2.cpp
+lawtonnichols:06-25/ $ pwd                                           [11:31:22]
+/Users/lawtonnichols/Desktop/cs16/Summer-2019/code-from-class/06-25
+lawtonnichols:06-25/ $ g++ sample.cpp                                [11:33:05]
+lawtonnichols:06-25/ $ ls                                            [11:33:44]
+a.out      hello2.cpp sample.cpp
+lawtonnichols:06-25/ $ ./a.out                                       [11:33:49]
+lawtonnichols:06-25/ $ ssh lawtonnichols@csil-08.cs.ucsb.edu         [11:42:02]
+Last login: Tue May 28 14:39:03 2019 from 169.231.95.60
+[lawtonnichols@csil-08 ~]$ ls
+a.out       asdf.txt          cs16-temp  Grading      readFiles         Trash
+asdf        asdf.txt~         cs260      Makefile     sample_directory  Videos
+asdf2       bin               cs290i     Makefile~    sample.txt
+asdf2.cpp   cs16              cs8        Music        sample.txt~
+asdf2.cpp~  cs162             Desktop    Pictures     Sent
+asdf.cpp    cs16-su17         Documents  Public       temp
+asdf.cpp~   cs16_summer_2017  Downloads  public_html  Templates
+[lawtonnichols@csil-08 ~]$ logout
+Connection to csil-08.cs.ucsb.edu closed.
+lawtonnichols:06-25/ $ ls                                            [11:43:32]
+a.out      hello.cpp  hello2.cpp sample.cpp
+lawtonnichols:06-25/ $ rm a.out                                      [11:47:45]
+lawtonnichols:06-25/ $ ls                                            [11:48:00]
+hello.cpp  hello2.cpp sample.cpp
+lawtonnichols:06-25/ $ g++ hello.cpp -o hello                        [11:48:14]
+hello.cpp:10:5: error: use of undeclared identifier 'cout'; did you mean
+      'std::cout'?
+    cout << "Hello, world!"; // every statement is ended
+    ^~~~
+    std::cout
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/iostream:54:33: note:
+      'std::cout' declared here
+extern _LIBCPP_FUNC_VIS ostream cout;
+                                ^
+1 error generated.
+lawtonnichols:06-25/ $ g++ hello.cpp -o hello                        [11:49:10]
+lawtonnichols:06-25/ $ ./hello                                       [11:52:33]
+Hello, world!%                                                                  lawtonnichols:06-25/ $ g++ hello.cpp -o hello                        [11:52:37]
+lawtonnichols:06-25/ $ ./hello                                       [11:53:13]
+Hello, world!
+lawtonnichols:06-25/ $ g++ types.cpp -o types                        [11:55:34]
+lawtonnichols:06-25/ $ ls                                            [11:55:44]
+hello      hello.cpp  hello2.cpp sample.cpp types      types.cpp
+lawtonnichols:06-25/ $ ./types                                       [11:55:47]
+5
+lawtonnichols:06-25/ $ g++ types.cpp -o types                        [11:55:50]
+lawtonnichols:06-25/ $ ./types                                       [11:57:55]
+5
+0
+1
+lawtonnichols:06-25/ $ g++ types.cpp -o types                        [11:57:57]
+lawtonnichols:06-25/ $ ./types                                       [12:01:37]
+5
+0
+1
+hi
+2.97079e-313
+3.14
+h
+lawtonnichols:06-25/ $ g++ types.cpp -o types                        [12:01:38]
+lawtonnichols:06-25/ $ ./types                                       [12:02:52]
+5
+0
+1
+hi
+2.97079e-313
+3.14
+h
+6
+lawtonnichols:06-25/ $ g++ types.cpp -o types                        [12:02:53]
+lawtonnichols:06-25/ $ g++ input.cpp -o input                        [12:07:45]
+lawtonnichols:06-25/ $ g++ input.cpp -o input                        [12:07:52]
+input.cpp:11:10: error: expected ';' at end of declaration
+    int n
+         ^
+         ;
+1 error generated.
+lawtonnichols:06-25/ $ g++ input.cpp -o input                        [12:08:01]
+lawtonnichols:06-25/ $ ./types                                       [12:08:16]
+5
+0
+1
+hi
+2.97079e-313
+3.14
+h
+6
+lawtonnichols:06-25/ $ ./input                                       [12:08:22]
+Enter a number: 3
+Your number plus 1 is: 4
+lawtonnichols:06-25/ $ ./input                                       [12:08:45]
+Enter a number: 1
+Your number plus 1 is: 2
+lawtonnichols:06-25/ $ ./input                                       [12:08:49]
+Enter a number: 0
+Your number plus 1 is: 1
+lawtonnichols:06-25/ $ g++ input.cpp -o input                        [12:11:20]
+lawtonnichols:06-25/ $ ./input                                       [12:11:35]
+Enter a number: 1
+Your number plus 1 is: 2
+lawtonnichols:06-25/ $ ./input                                       [12:11:36]
+Enter a number: 0
+Hey, you weren't supposed to type 0!
+Your number plus 1 is: 1
+lawtonnichols:06-25/ $ g++ input.cpp -o input                        [12:11:39]
+lawtonnichols:06-25/ $ ./input                                       [12:12:33]
+Enter a number: 0
+Hey, you weren't supposed to type 0!
+lawtonnichols:06-25/ $ echo $                                        [12:12:38]
+!                              _
+#                              __CF_USER_TEXT_ENCODING
+$                              __savecursor
+*                              __searching
+-                              _comp_assocs
+0                              _comp_dumpfile
+?                              _comp_options
+@                              _comp_setup
+ARGC                           _compautos
+Apple_PubSub_Socket_Render     _comps
+BG                             _lastcomp
+CAML_LD_LIBRARY_PATH           _omz_git_git_cmd
+CDPATH                         _patcomps
+COLORFGBG                      _postpatcomps
+COLORTERM                      _services
+COLUMNS                        _system_arch
+CPUTYPE                        _system_info
+DEFAULT_USER                   _system_name
+DISPLAY                        _system_name_lowercase
+DYLD_LIBRARY_PATH              _system_type
+EGID                           _system_version
+EUID                           aliases
+FG                             argv
+FIGNORE                        bg
+FPATH                          bg_bold
+FX                             bg_no_bold
+GEM_HOME                       bold_color
+GEM_PATH                       builtins
+GID                            cdpath
+HISTCHARS                      chpwd_functions
+HISTCMD                        color
+HISTFILE                       colour
+HISTSIZE                       commands
+HOME                           comppostfuncs
+HOST                           compprefuncs
+IRBRC                          custom_config_file
+ITERM_PROFILE                  d
+ITERM_SESSION_ID               dirstack
+JS_HOME                        dis_aliases
+KEYBOARD_HACK                  dis_builtins
+KEYTIMEOUT                     dis_functions
+LANG                           dis_galiases
+LC_ALL                         dis_patchars
+LC_CTYPE                       dis_reswords
+LESS                           dis_saliases
+LINENO                         entry
+LINES                          fg
+LISTMAX                        fg_bold
+LOGCHECK                       fg_no_bold
+LOGNAME                        fignore
+LSCOLORS                       fpath
+LS_COLORS                      funcfiletrace
+MACHTYPE                       funcsourcetrace
+MAILCHECK                      funcstack
+MAILPATH                       functions
+MANPATH                        functrace
+MENUSELECT                     galiases
+MODULE_PATH                    histchars
+MY_RUBY_HOME                   history
+NCOLOR                         historywords
+NULLCMD                        jobdirs
+OCAML_TOPLEVEL_PATH            jobstates
+OLDPWD                         jobtexts
+OPAMNOENVNOTICE                keymaps
+OPAM_SWITCH_PREFIX             langinfo
+OPTARG                         mailpath
+OPTIND                         manpath
+OSTYPE                         module_path
+PAGER                          modules
+PATH                           nameddirs
+POST_1_7_2_GIT                 options
+PPID                           parameters
+PROMPT                         patchars
+PROMPT2                        path
+PROMPT3                        pipestatus
+PROMPT4                        plugin
+PS1                            plugins
+PS2                            precmd_functions
+PS3                            preexec_functions
+PS4                            prompt
+PSVAR                          psvar
+PWD                            reset_color
+RANDOM                         reswords
+READNULLCMD                    rvm_alias_expanded
+RPROMPT                        rvm_bin_flag
+RUBY_VERSION                   rvm_bin_path
+SAFE_HOME                      rvm_delete_flag
+SAVEHIST                       rvm_docs_type
+SCREEN_NO                      rvm_file_name
+SHELL                          rvm_gemstone_package_file
+SHLVL                          rvm_gemstone_url
+SHORT_HOST                     rvm_hook
+SPROMPT                        rvm_ignore_rvmrc
+SSH_AGENT_PID                  rvm_niceness
+SSH_AUTH_SOCK                  rvm_nightly_flag
+TERM                           rvm_only_path_flag
+TERM_PROGRAM                   rvm_path
+TERM_PROGRAM_VERSION           rvm_prefix
+TERM_SESSION_ID                rvm_pretty_print_flag
+TIMEFMT                        rvm_proxy
+TMPDIR                         rvm_quiet_flag
+TMPPREFIX                      rvm_ruby_alias
+TRY_BLOCK_ERROR                rvm_ruby_bits
+TRY_BLOCK_INTERRUPT            rvm_ruby_configure
+TTY                            rvm_ruby_file
+TTYIDLE                        rvm_ruby_global_gems_path
+UID                            rvm_ruby_make
+USER                           rvm_ruby_make_install
+USERNAME                       rvm_ruby_mode
+VENDOR                         rvm_ruby_string
+WATCH                          rvm_ruby_url
+WATCHFMT                       rvm_rubygems_path
+WORDCHARS                      rvm_saved_env
+XPC_FLAGS                      rvm_script_name
+XPC_SERVICE_NAME               rvm_sdk
+Z3_LIB                         rvm_silent_flag
+ZLS_COLORS                     rvm_sticky_flag
+ZSH                            rvm_system_flag
+ZSH_ARGZERO                    rvm_use_flag
+ZSH_CACHE_DIR                  rvm_user_flag
+ZSH_COMPDUMP                   rvm_version
+ZSH_CUSTOM                     rvmrc
+ZSH_DISABLE_COMPFIX            saliases
+ZSH_EVAL_CONTEXT               script
+ZSH_NAME                       signals
+ZSH_PATCHLEVEL                 status
+ZSH_SPECTRUM_TEXT              termcap
+ZSH_SUBSHELL                   terminfo
+ZSH_THEME                      userdirs
+ZSH_THEME_GIT_PROMPT_CLEAN     usergroups
+ZSH_THEME_GIT_PROMPT_DIRTY     watch
+ZSH_THEME_GIT_PROMPT_PREFIX    widgets
+ZSH_THEME_GIT_PROMPT_SUFFIX    zle_bracketed_paste
+ZSH_THEME_TERM_TAB_TITLE_IDLE  zsh_eval_context
+ZSH_THEME_TERM_TITLE_IDLE      zsh_scheduled_events
+ZSH_VERSION
+lawtonnichols:06-25/ $ echo $?                                       [12:12:54]
+1
+lawtonnichols:06-25/ $ g++ input.cpp -o input                        [12:13:05]
+lawtonnichols:06-25/ $ ./input                                       [12:14:40]
+Enter a number: 0
+Hey, you weren't supposed to type 0!
+lawtonnichols:06-25/ $ ./input                                       [12:14:46]
+Enter a number: 1
+Your number plus 1 is: 2
+lawtonnichols:06-25/ $ g++ hello2.cpp -o hello2                      [12:14:50]
+lawtonnichols:06-25/ $ ./hello2                                      [12:17:03]
+Hello, world!
+starting in 3
+starting in 2
+starting in 1
+starting now!
+Hello‚ it's me
+I was wondering if after all these years you'd like to meet
+To go over everything
+They say that time's supposed to heal ya
+But I ain't done much healing
+Hello‚ can you hear me?
+I'm in California dreaming about who we used to be
+When we were younger and free
+I've forgotten how it felt before the world fell at our feet
+There's such a difference between us
+And a million miles
+Hello from the other side
+I must've called a thousand times
+To tell you I'm sorry for everything that I've done
+But when I call you never seem to be home
+Hello from the outside
+At least I can say that I tried
+To tell you I'm sorry for breaking your heart
+But it don't matter. It clearly doesn't tear you apart anymore
+^C
+lawtonnichols:06-25/ $ cd ..                                         [12:19:22]
+lawtonnichols:code-from-class/ $ ls                                  [12:36:59]
+06-25
+lawtonnichols:code-from-class/ $ g init                              [12:37:01]
+Initialized empty Git repository in /Users/lawtonnichols/Desktop/cs16/Summer-2019/code-from-class/.git/
+lawtonnichols:code-from-class/ (master*) $ git remote add origin git@github.com:ucsb-cs16-m19/code-from-class.git
+lawtonnichols:code-from-class/ (master*) $ git push -u origin master [12:37:09]
+error: src refspec master does not match any
+error: failed to push some refs to 'git@github.com:ucsb-cs16-m19/code-from-class.git'
+lawtonnichols:code-from-class/ (master*) $ g                         [12:37:14]
