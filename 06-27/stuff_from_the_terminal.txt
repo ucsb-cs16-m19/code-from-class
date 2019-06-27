@@ -1,0 +1,674 @@
+Last login: Tue Jun 25 10:45:01 on ttys002
+lawtonnichols:~/ $ pwd                                               [11:28:19]
+/Users/lawtonnichols
+lawtonnichols:~/ $ ls                                                [11:28:57]
+6.22.19 14.40.pklg   Library              dwhelper
+6.22.19 14.45.pklg   Movies               iMacros
+Applications         Music                lib
+Creative Cloud Files Pictures             project
+Desktop              PopcornTime          racket-prefs.rktd
+Documents            Public               roms
+Downloads            VirtualBox VMs       teyjus
+Dropbox              bin                  txl10.6d.macosx64
+lawtonnichols:~/ $ cd Desktop                                        [11:29:19]
+lawtonnichols:Desktop/ $ pwd                                         [11:30:38]
+/Users/lawtonnichols/Desktop
+lawtonnichols:Desktop/ $ ls                                          [11:30:44]
+01 - Don't Sing (feat. Benny Sings).mp3
+03 - Grand Champion.mp3
+Art
+Books
+Captura de Pantalla 2019-06-16 a la(s) 00.27.11.png
+Captura de Pantalla 2019-06-23 a la(s) 12.51.01.png
+Cotillion
+Donald_J._Mastronarde_Introduction_to_Attic_Greek.pdf
+Garth Brooks - The Ultimate Hits
+Kyle-Reading-List
+Papers
+TAJS
+Windows 3.1
+[1998] In The Aeroplane Over The Sea
+a.out
+asdf.cpp
+asdf.java
+asdf.py
+asdf.scala
+asdf.txt
+asdf.v
+asdf2.py
+cs16
+cs24
+cs8
+drawPolygon.html
+eta.ai
+fett
+film pics
+fix-moss.py
+fixpoint-reuse-artifact
+fixpoint-reuse-artifact.zip
+fixpoint-reuse-implementation
+fixpoint-reuse-implementation.zip
+model-counting-similarity
+notjs
+old 162 slides
+pdg-stuff
+plagiarism-detection-paper
+plrg
+proposal
+safe
+scala-am
+semantic-clone-detection-paper
+students.txt
+type-graphs.tar.gz
+while-incremental
+worklist-reuse-paper
+worklist-reuse-paper.zip
+worklist-reuse-tests
+xlcd
+lawtonnichols:Desktop/ $ cd cs16/Summer-2019/code-from-class/06-25   [11:30:46]
+lawtonnichols:06-25/ $ ls                                            [11:31:21]
+hello2.cpp
+lawtonnichols:06-25/ $ pwd                                           [11:31:22]
+/Users/lawtonnichols/Desktop/cs16/Summer-2019/code-from-class/06-25
+lawtonnichols:06-25/ $ g++ sample.cpp                                [11:33:05]
+lawtonnichols:06-25/ $ ls                                            [11:33:44]
+a.out      hello2.cpp sample.cpp
+lawtonnichols:06-25/ $ ./a.out                                       [11:33:49]
+lawtonnichols:06-25/ $ ssh lawtonnichols@csil-08.cs.ucsb.edu         [11:42:02]
+Last login: Tue May 28 14:39:03 2019 from 169.231.95.60
+[lawtonnichols@csil-08 ~]$ ls
+a.out       asdf.txt          cs16-temp  Grading      readFiles         Trash
+asdf        asdf.txt~         cs260      Makefile     sample_directory  Videos
+asdf2       bin               cs290i     Makefile~    sample.txt
+asdf2.cpp   cs16              cs8        Music        sample.txt~
+asdf2.cpp~  cs162             Desktop    Pictures     Sent
+asdf.cpp    cs16-su17         Documents  Public       temp
+asdf.cpp~   cs16_summer_2017  Downloads  public_html  Templates
+[lawtonnichols@csil-08 ~]$ logout
+Connection to csil-08.cs.ucsb.edu closed.
+lawtonnichols:06-25/ $ ls                                            [11:43:32]
+a.out      hello.cpp  hello2.cpp sample.cpp
+lawtonnichols:06-25/ $ rm a.out                                      [11:47:45]
+lawtonnichols:06-25/ $ ls                                            [11:48:00]
+hello.cpp  hello2.cpp sample.cpp
+lawtonnichols:06-25/ $ g++ hello.cpp -o hello                        [11:48:14]
+hello.cpp:10:5: error: use of undeclared identifier 'cout'; did you mean
+      'std::cout'?
+    cout << "Hello, world!"; // every statement is ended
+    ^~~~
+    std::cout
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/iostream:54:33: note:
+      'std::cout' declared here
+extern _LIBCPP_FUNC_VIS ostream cout;
+                                ^
+1 error generated.
+lawtonnichols:06-25/ $ g++ hello.cpp -o hello                        [11:49:10]
+lawtonnichols:06-25/ $ ./hello                                       [11:52:33]
+Hello, world!%                                                                  lawtonnichols:06-25/ $ g++ hello.cpp -o hello                        [11:52:37]
+lawtonnichols:06-25/ $ ./hello                                       [11:53:13]
+Hello, world!
+lawtonnichols:06-25/ $ g++ types.cpp -o types                        [11:55:34]
+lawtonnichols:06-25/ $ ls                                            [11:55:44]
+hello      hello.cpp  hello2.cpp sample.cpp types      types.cpp
+lawtonnichols:06-25/ $ ./types                                       [11:55:47]
+5
+lawtonnichols:06-25/ $ g++ types.cpp -o types                        [11:55:50]
+lawtonnichols:06-25/ $ ./types                                       [11:57:55]
+5
+0
+1
+lawtonnichols:06-25/ $ g++ types.cpp -o types                        [11:57:57]
+lawtonnichols:06-25/ $ ./types                                       [12:01:37]
+5
+0
+1
+hi
+2.97079e-313
+3.14
+h
+lawtonnichols:06-25/ $ g++ types.cpp -o types                        [12:01:38]
+lawtonnichols:06-25/ $ ./types                                       [12:02:52]
+5
+0
+1
+hi
+2.97079e-313
+3.14
+h
+6
+lawtonnichols:06-25/ $ g++ types.cpp -o types                        [12:02:53]
+lawtonnichols:06-25/ $ g++ input.cpp -o input                        [12:07:45]
+lawtonnichols:06-25/ $ g++ input.cpp -o input                        [12:07:52]
+input.cpp:11:10: error: expected ';' at end of declaration
+    int n
+         ^
+         ;
+1 error generated.
+lawtonnichols:06-25/ $ g++ input.cpp -o input                        [12:08:01]
+lawtonnichols:06-25/ $ ./types                                       [12:08:16]
+5
+0
+1
+hi
+2.97079e-313
+3.14
+h
+6
+lawtonnichols:06-25/ $ ./input                                       [12:08:22]
+Enter a number: 3
+Your number plus 1 is: 4
+lawtonnichols:06-25/ $ ./input                                       [12:08:45]
+Enter a number: 1
+Your number plus 1 is: 2
+lawtonnichols:06-25/ $ ./input                                       [12:08:49]
+Enter a number: 0
+Your number plus 1 is: 1
+lawtonnichols:06-25/ $ g++ input.cpp -o input                        [12:11:20]
+lawtonnichols:06-25/ $ ./input                                       [12:11:35]
+Enter a number: 1
+Your number plus 1 is: 2
+lawtonnichols:06-25/ $ ./input                                       [12:11:36]
+Enter a number: 0
+Hey, you weren't supposed to type 0!
+Your number plus 1 is: 1
+lawtonnichols:06-25/ $ g++ input.cpp -o input                        [12:11:39]
+lawtonnichols:06-25/ $ ./input                                       [12:12:33]
+Enter a number: 0
+Hey, you weren't supposed to type 0!
+lawtonnichols:06-25/ $ echo $                                        [12:12:38]
+!                              _
+#                              __CF_USER_TEXT_ENCODING
+$                              __savecursor
+*                              __searching
+-                              _comp_assocs
+0                              _comp_dumpfile
+?                              _comp_options
+@                              _comp_setup
+ARGC                           _compautos
+Apple_PubSub_Socket_Render     _comps
+BG                             _lastcomp
+CAML_LD_LIBRARY_PATH           _omz_git_git_cmd
+CDPATH                         _patcomps
+COLORFGBG                      _postpatcomps
+COLORTERM                      _services
+COLUMNS                        _system_arch
+CPUTYPE                        _system_info
+DEFAULT_USER                   _system_name
+DISPLAY                        _system_name_lowercase
+DYLD_LIBRARY_PATH              _system_type
+EGID                           _system_version
+EUID                           aliases
+FG                             argv
+FIGNORE                        bg
+FPATH                          bg_bold
+FX                             bg_no_bold
+GEM_HOME                       bold_color
+GEM_PATH                       builtins
+GID                            cdpath
+HISTCHARS                      chpwd_functions
+HISTCMD                        color
+HISTFILE                       colour
+HISTSIZE                       commands
+HOME                           comppostfuncs
+HOST                           compprefuncs
+IRBRC                          custom_config_file
+ITERM_PROFILE                  d
+ITERM_SESSION_ID               dirstack
+JS_HOME                        dis_aliases
+KEYBOARD_HACK                  dis_builtins
+KEYTIMEOUT                     dis_functions
+LANG                           dis_galiases
+LC_ALL                         dis_patchars
+LC_CTYPE                       dis_reswords
+LESS                           dis_saliases
+LINENO                         entry
+LINES                          fg
+LISTMAX                        fg_bold
+LOGCHECK                       fg_no_bold
+LOGNAME                        fignore
+LSCOLORS                       fpath
+LS_COLORS                      funcfiletrace
+MACHTYPE                       funcsourcetrace
+MAILCHECK                      funcstack
+MAILPATH                       functions
+MANPATH                        functrace
+MENUSELECT                     galiases
+MODULE_PATH                    histchars
+MY_RUBY_HOME                   history
+NCOLOR                         historywords
+NULLCMD                        jobdirs
+OCAML_TOPLEVEL_PATH            jobstates
+OLDPWD                         jobtexts
+OPAMNOENVNOTICE                keymaps
+OPAM_SWITCH_PREFIX             langinfo
+OPTARG                         mailpath
+OPTIND                         manpath
+OSTYPE                         module_path
+PAGER                          modules
+PATH                           nameddirs
+POST_1_7_2_GIT                 options
+PPID                           parameters
+PROMPT                         patchars
+PROMPT2                        path
+PROMPT3                        pipestatus
+PROMPT4                        plugin
+PS1                            plugins
+PS2                            precmd_functions
+PS3                            preexec_functions
+PS4                            prompt
+PSVAR                          psvar
+PWD                            reset_color
+RANDOM                         reswords
+READNULLCMD                    rvm_alias_expanded
+RPROMPT                        rvm_bin_flag
+RUBY_VERSION                   rvm_bin_path
+SAFE_HOME                      rvm_delete_flag
+SAVEHIST                       rvm_docs_type
+SCREEN_NO                      rvm_file_name
+SHELL                          rvm_gemstone_package_file
+SHLVL                          rvm_gemstone_url
+SHORT_HOST                     rvm_hook
+SPROMPT                        rvm_ignore_rvmrc
+SSH_AGENT_PID                  rvm_niceness
+SSH_AUTH_SOCK                  rvm_nightly_flag
+TERM                           rvm_only_path_flag
+TERM_PROGRAM                   rvm_path
+TERM_PROGRAM_VERSION           rvm_prefix
+TERM_SESSION_ID                rvm_pretty_print_flag
+TIMEFMT                        rvm_proxy
+TMPDIR                         rvm_quiet_flag
+TMPPREFIX                      rvm_ruby_alias
+TRY_BLOCK_ERROR                rvm_ruby_bits
+TRY_BLOCK_INTERRUPT            rvm_ruby_configure
+TTY                            rvm_ruby_file
+TTYIDLE                        rvm_ruby_global_gems_path
+UID                            rvm_ruby_make
+USER                           rvm_ruby_make_install
+USERNAME                       rvm_ruby_mode
+VENDOR                         rvm_ruby_string
+WATCH                          rvm_ruby_url
+WATCHFMT                       rvm_rubygems_path
+WORDCHARS                      rvm_saved_env
+XPC_FLAGS                      rvm_script_name
+XPC_SERVICE_NAME               rvm_sdk
+Z3_LIB                         rvm_silent_flag
+ZLS_COLORS                     rvm_sticky_flag
+ZSH                            rvm_system_flag
+ZSH_ARGZERO                    rvm_use_flag
+ZSH_CACHE_DIR                  rvm_user_flag
+ZSH_COMPDUMP                   rvm_version
+ZSH_CUSTOM                     rvmrc
+ZSH_DISABLE_COMPFIX            saliases
+ZSH_EVAL_CONTEXT               script
+ZSH_NAME                       signals
+ZSH_PATCHLEVEL                 status
+ZSH_SPECTRUM_TEXT              termcap
+ZSH_SUBSHELL                   terminfo
+ZSH_THEME                      userdirs
+ZSH_THEME_GIT_PROMPT_CLEAN     usergroups
+ZSH_THEME_GIT_PROMPT_DIRTY     watch
+ZSH_THEME_GIT_PROMPT_PREFIX    widgets
+ZSH_THEME_GIT_PROMPT_SUFFIX    zle_bracketed_paste
+ZSH_THEME_TERM_TAB_TITLE_IDLE  zsh_eval_context
+ZSH_THEME_TERM_TITLE_IDLE      zsh_scheduled_events
+ZSH_VERSION
+lawtonnichols:06-25/ $ echo $?                                       [12:12:54]
+1
+lawtonnichols:06-25/ $ g++ input.cpp -o input                        [12:13:05]
+lawtonnichols:06-25/ $ ./input                                       [12:14:40]
+Enter a number: 0
+Hey, you weren't supposed to type 0!
+lawtonnichols:06-25/ $ ./input                                       [12:14:46]
+Enter a number: 1
+Your number plus 1 is: 2
+lawtonnichols:06-25/ $ g++ hello2.cpp -o hello2                      [12:14:50]
+lawtonnichols:06-25/ $ ./hello2                                      [12:17:03]
+Hello, world!
+starting in 3
+starting in 2
+starting in 1
+starting now!
+Hello‚ it's me
+I was wondering if after all these years you'd like to meet
+To go over everything
+They say that time's supposed to heal ya
+But I ain't done much healing
+Hello‚ can you hear me?
+I'm in California dreaming about who we used to be
+When we were younger and free
+I've forgotten how it felt before the world fell at our feet
+There's such a difference between us
+And a million miles
+Hello from the other side
+I must've called a thousand times
+To tell you I'm sorry for everything that I've done
+But when I call you never seem to be home
+Hello from the outside
+At least I can say that I tried
+To tell you I'm sorry for breaking your heart
+But it don't matter. It clearly doesn't tear you apart anymore
+^C
+lawtonnichols:06-25/ $ cd ..                                         [12:19:22]
+lawtonnichols:code-from-class/ $ ls                                  [12:36:59]
+06-25
+lawtonnichols:code-from-class/ $ g init                              [12:37:01]
+Initialized empty Git repository in /Users/lawtonnichols/Desktop/cs16/Summer-2019/code-from-class/.git/
+lawtonnichols:code-from-class/ (master*) $ git remote add origin git@github.com:ucsb-cs16-m19/code-from-class.git
+lawtonnichols:code-from-class/ (master*) $ git push -u origin master [12:37:09]
+error: src refspec master does not match any
+error: failed to push some refs to 'git@github.com:ucsb-cs16-m19/code-from-class.git'
+lawtonnichols:code-from-class/ (master*) $ g st                      [12:37:14]
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+    06-25/
+
+nothing added to commit but untracked files present (use "git add" to track)
+lawtonnichols:code-from-class/ (master*) $ g st                      [12:39:16]
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+    06-25/
+
+nothing added to commit but untracked files present (use "git add" to track)
+lawtonnichols:code-from-class/ (master*) $ g add .                   [12:39:28]
+lawtonnichols:code-from-class/ (master*) $ g st                      [12:39:29]
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+    new file:   06-25/hello
+    new file:   06-25/hello.cpp
+    new file:   06-25/hello2
+    new file:   06-25/hello2.cpp
+    new file:   06-25/input
+    new file:   06-25/input.cpp
+    new file:   06-25/sample.cpp
+    new file:   06-25/stuff-I-wrote-on-the-terminal.txt
+    new file:   06-25/types
+    new file:   06-25/types.cpp
+
+lawtonnichols:code-from-class/ (master*) $ g add .                   [12:39:35]
+lawtonnichols:code-from-class/ (master*) $ g st                      [12:39:50]
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+    new file:   06-25/hello
+    new file:   06-25/hello.cpp
+    new file:   06-25/hello2
+    new file:   06-25/hello2.cpp
+    new file:   06-25/input
+    new file:   06-25/input.cpp
+    new file:   06-25/sample.cpp
+    new file:   06-25/stuff-I-wrote-on-the-terminal.txt
+    new file:   06-25/types
+    new file:   06-25/types.cpp
+
+lawtonnichols:code-from-class/ (master*) $ g c -m .                  [12:40:09]
+[master (root-commit) f980b99] .
+ 10 files changed, 550 insertions(+)
+ create mode 100755 06-25/hello
+ create mode 100644 06-25/hello.cpp
+ create mode 100755 06-25/hello2
+ create mode 100644 06-25/hello2.cpp
+ create mode 100755 06-25/input
+ create mode 100644 06-25/input.cpp
+ create mode 100644 06-25/sample.cpp
+ create mode 100644 06-25/stuff-I-wrote-on-the-terminal.txt
+ create mode 100755 06-25/types
+ create mode 100644 06-25/types.cpp
+lawtonnichols:code-from-class/ (master) $ g push                     [12:40:10]
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+lawtonnichols:code-from-class/ (master) $ git remote add origin git@github.com:ucsb-cs16-m19/code-from-class.git
+fatal: remote origin already exists.
+lawtonnichols:code-from-class/ (master) $                            [12:41:14]
+lawtonnichols:code-from-class/ (master) $ git push -u origin master  [12:41:19]
+ Enumerating objects: 13, done.
+Counting objects: 100% (13/13), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (12/12), done.
+Writing objects: 100% (13/13), 23.04 KiB | 3.29 MiB/s, done.
+Total 13 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), done.
+To github.com:ucsb-cs16-m19/code-from-class.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+lawtonnichols:code-from-class/ (master) $ g st                       [12:41:24]
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+lawtonnichols:code-from-class/ (master) $ ls                         [12:42:19]
+06-25
+lawtonnichols:code-from-class/ (master) $ mkdir 06-27                [11:06:17]
+lawtonnichols:code-from-class/ (master) $ ls                         [11:07:08]
+06-25 06-27
+lawtonnichols:code-from-class/ (master) $ cd 06-27                   [11:07:10]
+lawtonnichols:06-27/ (master) $ ls                                   [11:07:18]
+lawtonnichols:06-27/ (master*) $ ls                                  [11:09:09]
+divide_by_zero.cpp
+lawtonnichols:06-27/ (master*) $ pwd                                 [11:09:15]
+/Users/lawtonnichols/Desktop/cs16/Summer-2019/code-from-class/06-27
+lawtonnichols:06-27/ (master*) $ g++ divide_by_zero.cpp -o divide_by_zero
+lawtonnichols:06-27/ (master*) $ ./divide_by_zero                    [11:09:30]
+Enter a number: 5
+1.14
+lawtonnichols:06-27/ (master*) $ ./divide_by_zero                    [11:09:49]
+Enter a number: 0
+inf
+lawtonnichols:06-27/ (master*) $ g++ divide_by_zero.cpp -o divide_by_zero
+lawtonnichols:06-27/ (master*) $ ./divide_by_zero                    [11:10:06]
+Enter a number: 0
+inf
+lawtonnichols:06-27/ (master*) $ g++ divide_by_zero.cpp -o divide_by_zero
+lawtonnichols:06-27/ (master*) $ ./divide_by_zero                    [11:10:29]
+Enter a number: 0
+[1]    9112 floating point exception  ./divide_by_zero
+lawtonnichols:06-27/ (master*) $ g++ divide_by_zero.cpp -o divide_by_zero
+divide_by_zero.cpp:13:15: warning: division by zero is undefined
+      [-Wdivision-by-zero]
+    cout << 1 / 0 << endl;
+              ^ ~
+1 warning generated.
+lawtonnichols:06-27/ (master*) $ g++ uninitialized_vars.cpp -o uninitialized_vars
+lawtonnichols:06-27/ (master*) $ ./uninitialized_vars                [11:15:39]
+The sum of 1 and 175898678 is:175898679
+lawtonnichols:06-27/ (master*) $ g++ fizzbuzz-1.0.cpp -o fizzbuzz-1.0
+lawtonnichols:06-27/ (master*) $ ./fizzbuzz-1.0                      [11:34:59]
+Enter a number: 1
+1
+lawtonnichols:06-27/ (master*) $ ./fizzbuzz-1.0                      [11:35:07]
+Enter a number: 2
+2
+lawtonnichols:06-27/ (master*) $ ./fizzbuzz-1.0                      [11:35:11]
+Enter a number: 3
+fizz
+lawtonnichols:06-27/ (master*) $ ./fizzbuzz-1.0                      [11:35:12]
+Enter a number: 6
+fizz
+lawtonnichols:06-27/ (master*) $ ./fizzbuzz-1.0                      [11:35:17]
+Enter a number: 7
+7
+lawtonnichols:06-27/ (master*) $ ./fizzbuzz-1.0                      [11:35:19]
+Enter a number: 15
+fizz
+lawtonnichols:06-27/ (master*) $ g++ fizzbuzz-2.0.cpp -o fizzbuzz-2.0
+lawtonnichols:06-27/ (master*) $ ./fizzbuzz-2.0                      [11:40:03]
+Enter a number: 2
+2
+lawtonnichols:06-27/ (master*) $ ./fizzbuzz-2.0                      [11:40:08]
+Enter a number: 3
+fizz
+lawtonnichols:06-27/ (master*) $ ./fizzbuzz-2.0                      [11:40:10]
+Enter a number: 5
+buzz
+lawtonnichols:06-27/ (master*) $ ./fizzbuzz-2.0                      [11:40:11]
+Enter a number: 15
+fizzbuzz
+lawtonnichols:06-27/ (master*) $ ./fizzbuzz-2.0 15                   [11:40:13]
+lawtonnichols:06-27/ (master*) $ g++ fizzbuzz-2.0.cpp -o fizzbuzz-2.0
+lawtonnichols:06-27/ (master*) $ g++ fizzbuzz-2.0.cpp -o fizzbuzz-2.0
+fizzbuzz-2.0.cpp:21:9: error: cannot initialize a variable of type 'int' with an
+      lvalue of type 'char *'
+    int n = argv[1];
+        ^   ~~~~~~~
+1 error generated.
+lawtonnichols:06-27/ (master*) $ g++ fizzbuzz-2.0.cpp -o fizzbuzz-2.0
+lawtonnichols:06-27/ (master*) $ ./fizzbuzz-2.0 15                   [11:47:35]
+fizzbuzz
+lawtonnichols:06-27/ (master*) $ ./fizzbuzz-2.0 2                    [11:47:40]
+2
+lawtonnichols:06-27/ (master*) $ ./fizzbuzz-2.0 3                    [11:47:59]
+fizz
+lawtonnichols:06-27/ (master*) $ ./fizzbuzz-2.0 5                    [11:48:00]
+buzz
+lawtonnichols:06-27/ (master*) $ ./fizzbuzz-2.0 30                   [11:48:02]
+fizzbuzz
+lawtonnichols:06-27/ (master*) $ ./fizzbuzz-2.0                      [11:48:06]
+[1]    9447 segmentation fault  ./fizzbuzz-2.0
+lawtonnichols:06-27/ (master*) $ g++ fizzbuzz-2.0.cpp -o fizzbuzz-2.0
+lawtonnichols:06-27/ (master*) $ ./fizzbuzz-2.0 15                   [11:51:49]
+fizzbuzz
+lawtonnichols:06-27/ (master*) $ ./fizzbuzz-2.0                      [11:51:51]
+Hey man, you were supposed to give us 2 arguments.
+lawtonnichols:06-27/ (master*) $ git clone git@github.com:ucsb-cs16-m19/code-from-class.git
+lawtonnichols:06-27/ (master*) $ cd ..                               [11:55:45]
+lawtonnichols:code-from-class/ (master*) $ pwd                       [11:56:28]
+/Users/lawtonnichols/Desktop/cs16/Summer-2019/code-from-class
+lawtonnichols:code-from-class/ (master*) $ ls                        [11:56:37]
+06-25 06-27
+lawtonnichols:code-from-class/ (master*) $ git status                [11:56:39]
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+    06-27/
+
+nothing added to commit but untracked files present (use "git add" to track)
+lawtonnichols:code-from-class/ (master*) $ git add 06-27             [11:56:45]
+lawtonnichols:code-from-class/ (master*) $ git status                [11:57:08]
+On branch master
+Your branch is up to date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+    new file:   06-27/divide_by_zero
+    new file:   06-27/divide_by_zero.cpp
+    new file:   06-27/fizzbuzz-1.0
+    new file:   06-27/fizzbuzz-1.0.cpp
+    new file:   06-27/fizzbuzz-2.0
+    new file:   06-27/fizzbuzz-2.0.cpp
+    new file:   06-27/uninitialized_vars
+    new file:   06-27/uninitialized_vars.cpp
+
+lawtonnichols:code-from-class/ (master*) $ git commit -m "added some 06-27 files"
+[master 30efde7] added some 06-27 files
+ 8 files changed, 85 insertions(+)
+ create mode 100755 06-27/divide_by_zero
+ create mode 100644 06-27/divide_by_zero.cpp
+ create mode 100755 06-27/fizzbuzz-1.0
+ create mode 100644 06-27/fizzbuzz-1.0.cpp
+ create mode 100755 06-27/fizzbuzz-2.0
+ create mode 100644 06-27/fizzbuzz-2.0.cpp
+ create mode 100755 06-27/uninitialized_vars
+ create mode 100644 06-27/uninitialized_vars.cpp
+lawtonnichols:code-from-class/ (master) $ git status                 [11:57:49]
+On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+lawtonnichols:code-from-class/ (master) $ git push                   [11:58:27]
+Enumerating objects: 12, done.
+Counting objects: 100% (12/12), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (11/11), done.
+Writing objects: 100% (11/11), 9.17 KiB | 3.06 MiB/s, done.
+Total 11 (delta 4), reused 0 (delta 0)
+remote: Resolving deltas: 100% (4/4), done.
+To github.com:ucsb-cs16-m19/code-from-class.git
+   f980b99..30efde7  master -> master
+lawtonnichols:code-from-class/ (master) $ git pull                   [11:58:39]
+Already up to date.
+lawtonnichols:code-from-class/ (master) $ cd 06-27                   [11:59:07]
+lawtonnichols:06-27/ (master*) $ g++ type_conversion.cpp -o type_conversion
+lawtonnichols:06-27/ (master*) $ ./type_conversion                   [12:03:39]
+5
+lawtonnichols:06-27/ (master*) $ g++ type_conversion.cpp -o type_conversion
+lawtonnichols:06-27/ (master*) $ ./type_conversion                   [12:04:14]
+5
+1
+lawtonnichols:06-27/ (master*) $ g++ type_conversion.cpp -o type_conversion
+lawtonnichols:06-27/ (master*) $ ./type_conversion                   [12:05:45]
+5
+1
+3
+lawtonnichols:06-27/ (master*) $ g++ type_conversion.cpp -o type_conversion
+lawtonnichols:06-27/ (master*) $ ./type_conversion                   [12:06:23]
+5
+1
+3
+0
+lawtonnichols:06-27/ (master*) $ g++ type_conversion.cpp -o type_conversion
+lawtonnichols:06-27/ (master*) $ ./type_conversion                   [12:08:13]
+5
+1
+3
+0
+0.333333
+lawtonnichols:06-27/ (master*) $ g++ type_conversion.cpp -o type_conversion
+lawtonnichols:06-27/ (master*) $ ./type_conversion                   [12:08:58]
+5
+1
+3
+0
+0.333333
+0.333333
+0.333333
+lawtonnichols:06-27/ (master*) $ g++ type_conversion.cpp -o type_conversion
+lawtonnichols:06-27/ (master*) $ ./type_conversion                   [12:09:49]
+5
+1
+3
+0
+0.333333
+0.333333
+0.333333
+0
+lawtonnichols:06-27/ (master*) $ g++ printing_doubles.cpp -o printing_doubles
+lawtonnichols:06-27/ (master*) $ ./printing_doubles                  [12:15:11]
+0.100%                                                                          lawtonnichols:06-27/ (master*) $ g++ for_loop_example.cpp -o for_loop_example
+lawtonnichols:06-27/ (master*) $ ./for_loop_example                  [12:18:50]
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+lawtonnichols:06-27/ (master*) $                                     [12:41:06]
