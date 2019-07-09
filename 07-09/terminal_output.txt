@@ -1,0 +1,44 @@
+lawtonnichols:07-02/ (master*) $ g++ drawSquare_func.cpp -o drawSquare_func
+lawtonnichols:07-02/ (master*) $ ./drawSquare_func                   [11:13:31]
+Assertion failed!
+lawtonnichols:07-02/ (master*) $ ./drawSquare_func 5                 [11:13:50]
+* * * * *
+* * * * *
+* * * * *
+* * * * *
+* * * * *
+lawtonnichols:07-02/ (master*) $ python3                             [11:13:55]
+Python 3.7.0 (v3.7.0:1bf9cc5093, Jun 26 2018, 23:26:24)
+[Clang 6.0 (clang-600.0.57)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> [0.1] * 10
+[0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1]
+>>> l = [0.1] * 10
+>>> l
+[0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1]
+>>> sum(l)
+0.9999999999999999
+>>> ^D
+lawtonnichols:07-02/ (master*) $ cd ../07-09                         [11:59:16]
+lawtonnichols:07-09/ (master*) $ ls                                  [11:59:21]
+shapes.cpp tdd.cpp    tdd.h
+lawtonnichols:07-09/ (master*) $ g++ shapes.cpp -o shapes            [11:59:22]
+lawtonnichols:07-09/ (master*) $ ./shapes                            [11:59:28]
+Assertion failed: (drawTriangle(3) == " * \n***\n"), function main, file shapes.cpp, line 19.
+[1]    22099 abort      ./shapes
+lawtonnichols:07-09/ (master*) $ g++ shapes.cpp -o shapes            [11:59:31]
+shapes.cpp:61:1: warning: control may reach end of non-void function
+      [-Wreturn-type]
+}
+^
+1 warning generated.
+lawtonnichols:07-09/ (master*) $ g++ shapes.cpp -o shapes            [12:01:42]
+lawtonnichols:07-09/ (master*) $ ./shapes                            [12:03:37]
+lawtonnichols:07-09/ (master*) $ g++ -S shapes.cpp                   [12:03:38]
+lawtonnichols:07-09/ (master*) $ ls                                  [12:09:17]
+shapes     shapes.cpp shapes.s   tdd.cpp    tdd.h
+lawtonnichols:07-09/ (master*) $ g++ -c shapes.cpp                   [12:09:18]
+lawtonnichols:07-09/ (master*) $ ls                                  [12:11:12]
+shapes     shapes.cpp shapes.o   shapes.s   tdd.cpp    tdd.h
+lawtonnichols:07-09/ (master*) $ g++ shapes.o -o shapes              [12:11:13]
+lawtonnichols:07-09/ (master*) $ ./shapes
