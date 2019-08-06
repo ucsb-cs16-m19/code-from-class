@@ -42,5 +42,11 @@ int main(int argc, char *argv[])
 
     cout << "centroid is: (" << c.x << ", " << c.y << ")\n";
 
+    // *technically*, the program is about to end and all its memory will be
+    // reclaimed anyway
+
+    // but if I wanted to delete the arr_of_points array, I'd have to do:
+    delete[] arr_of_points;
+
     return 0;
 }
